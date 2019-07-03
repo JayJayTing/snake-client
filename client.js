@@ -9,12 +9,28 @@ const connect = function() {
   
     conn.on("connect", ()=> {
       console.log("connected to server, hello from client");
+
       conn.write("Name: JAY");
+      conn.write("Move: up");
+      
+        setInterval(()=>{
+      conn.write("Move: up");
+      },50)
+      
+      
+      
+      
+      
+      // conn.write("Move: up");
+      // conn.write("Move: left");
+     
     })
     conn.on("data", (data)=>{
       console.log(data);
   
     } )
+
+    
   
   
   
