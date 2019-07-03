@@ -30,6 +30,9 @@ const setupInput = function(conn) {
     }else if(key === 'd')
     {
         connection.write("Move: right");
+    }else if(key === 'l')
+    {
+        connection.write("Say: ノಠ益ಠノ彡┻━┻ ")
     }
   }
 
