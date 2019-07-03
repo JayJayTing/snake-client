@@ -11,11 +11,11 @@ const connect = function() {
       console.log("connected to server, hello from client");
 
       conn.write("Name: JAY");
-      conn.write("Move: up");
+      // conn.write("Move: up");
       
-        setInterval(()=>{
-      conn.write("Move: up");
-      },50)
+      //   setInterval(()=>{
+      // conn.write("Move: up");
+      // },50)
       
       
       
